@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Formulir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formulir">
+            <label for="nama">Nama:</label> 
+            <input type="text" id="nama" name="nama"> <br><br>
+    
+            <label for="alamat">Alamat:</label> 
+            <textarea name="alamat" id="alamat"></textarea> <br><br>
+    
+            <label for="TTL">Tanggal Lahir:</label>
+            <input type="date" id="TTL" name="TTL" placeholder="Pilih tanggal"> <br><br>
+    
+            <label>Jenis Kelamin</label>
+            <input type="radio" id="laki" name="jk" value="Laki-Laki">
+            <label for="laki">Laki-Laki</label> <br>
+            <input type="radio" id="perempuan" name="jk" value="perempuan">
+            <label for="perempuan">Perempuan</label> <br><br>
+    
+            <label>Hobby:</label>
+            <input type="checkbox" id="berenang" name="hobi" value="Berenang">
+            <label for="berenang">Berenang</label>
+            <input type="checkbox" id="berlari" name="hobi" value="Berlari">
+            <label for="berlari">Berlari</label>
+            <input type="checkbox" id="lain" name="hobi" value="Lain-Lain">
+            <label for="lain">Lain-Lain</label><br><br>
+    
+            <label>Pekerjaan</label>
+            <input type="radio" id="swasta" name="kerja" value="Swasta">
+            <label for="swasta">Swasta</label>
+            <input type="radio" id="pns" name="kerja" value="PNS">
+            <label for="pns">PNS</label>
+            <input type="radio" id="lain" name="kerja" value="Lain-Lain">
+            <label for="lain">Lain-Lain</label><br><br>
+    
+            <label>
+                <input type="checkbox" id="setuju" name="setuju"> Check jika anda akan mengirimkan data ini <br>
+            </label><br><br>
+            
+            <button type="button" onclick="validasi()">Cek!</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
