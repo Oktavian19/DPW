@@ -43,4 +43,12 @@ echo "Hasil And: $hasilAnd <br>";
 echo "Hasil Or: $hasilOr <br>";
 echo "Hasil Not A: $hasilNotA <br>";
 echo "Hasil Not B: $hasilNotB <br>";
+
+echo "<br><br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "Hasil Identik: $hasilIdentik <br>";
+echo "Hasil Tidak Identik: $hasilTidakIdentik";
 ?>
