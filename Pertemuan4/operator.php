@@ -34,6 +34,19 @@ echo "Hasil Lebih Besar Sama: $hasilLebihBesarSama <br>";
 
 echo "<br><br>";
 
+$a += $b;
+echo "a += b : $a<br>";
+$a -= $b;
+echo "a -= b : $a<br>";
+$a *= $b;
+echo "a *= b : $a<br>";
+$a /= $b;
+echo "a /= b : $a<br>";
+$a %= $b;
+echo "a %= b : $a<br>";
+
+echo "<br><br>";
+
 $hasilAnd = $a && $b;
 $hasilOr = $a || $b;
 $hasilNotA = !$a;
