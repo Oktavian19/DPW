@@ -3,6 +3,9 @@
 function perkenalan($nama, $salam="Assalamualaikum"){
     echo $salam.", ";
     echo "Perkenalkan, nama saya ".$nama."<br/>";
+
+    //Memanggil fungsi lain
+    echo "Saya berusia ". hitungUmur(1988, 2023) ." tahun<br>";
     echo "Senang berkenalan dengan Anda<br/>";
 }
 
@@ -12,9 +15,7 @@ function hitungUmur($thn_lahir, $thn_sekarang){
 }
 
 //Memanggil fungsi yang sudah dibuat
-echo "Umur saya adalah ". hitungUmur(1988, 2023) ." tahun<br>";
-
-perkenalan("Hamdana", "Hallo");
+perkenalan("Oktavian Eka");
 
 echo "<hr>";
 
