@@ -40,9 +40,17 @@
             }
             echo "</tr>";
         }
+
+        $tot_usia = 0;
+        for ($i=0; $i < count($listSiswa); $i++) { 
+            $tot_usia += $listSiswa[$i][1];
+        }
+
+        $rerata = $tot_usia/count($listSiswa);
         ?>
         </tbody>
     </table>
+    <h2>Rata-Rata Umur Siswa : <?php echo "$rerata";?> tahun</h2>
     </div>
 </body>
 </html>
