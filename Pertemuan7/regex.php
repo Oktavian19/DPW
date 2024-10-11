@@ -28,7 +28,7 @@ echo $new_text;
 
 echo "<br><br>";
 
-$pattern = '/go?d/';
+$pattern = '{n,m}';
 $text = 'god is good';
 if (preg_match($pattern, $text, $matches)) {
     echo "Cocokkan: " . $matches[0];
