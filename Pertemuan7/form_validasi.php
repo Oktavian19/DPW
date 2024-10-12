@@ -11,10 +11,13 @@
         <input type="text" name="nama" id="nama">
         <span id="nama-error" style="color: red;"></span>
         <br>
-        pertemuan7_soal7.2
         <label for="email">Email:</label>
         <input type="text" name="email" id="email">
         <span id="email-error" style="color: red;"></span>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <span id="password-error" style="color: red;"></span>
         <br>
 
         <input type="submit" value="Submit">
@@ -31,7 +34,6 @@
                 event.preventDefault();
 
                 var formdata = $("#myForm").serialize();
-
                 
                 $.ajax({
                     url: "proses_validasi.php",
