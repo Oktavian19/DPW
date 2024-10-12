@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($email)) {
-        $errors = "Email harus diisi";
+        $errors[] = "Email harus diisi";
     } elseif (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Format email tidak valid";
     }
